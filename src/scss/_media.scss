@@ -1,0 +1,57 @@
+//1
+@media (max-width: 1215px) {
+	.container {
+		max-width: 960px;
+	}
+	.posts {
+		padding: 0 3rem 0 0;
+	}
+	.aside {
+		padding: 0 0 0 3rem;
+	}
+}
+//2
+@media (max-width: 991px) {
+	.container {
+		max-width: 720px;
+	}
+	.posts {
+		padding: 0;
+		border-right: none;
+	}
+	.aside {
+		display: none;
+	}
+}
+//3 
+@media (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+	.card {
+		flex-direction: column;
+	}
+	.card__left {
+		margin: 0 0 4rem 0;
+	}
+	.card__image {
+		width: 100%;
+	}
+	.card__image img {
+		width: 100%;
+	}
+}
+//4 
+@media (max-width: 576px) {
+	.container {
+		max-width: 100%;
+		padding: 0 15px;
+	}
+	.card__left {
+		margin: 0 0 2rem 0;
+	}
+	.card__title {
+		font-size: 1.8rem;
+		line-height: 2.4rem;
+	}
+}

@@ -1,0 +1,17 @@
+mixin header
+	header.header 
+		.container
+			nav.header__nav
+				.header__menu
+					ul.header__left_list
+						li.header__left_item TAGS: 
+							each value in links
+								li.header__left_item 
+									a(href=value.link)= value.name
+					ul.header__right_list
+						li.header__right_item 
+							a(href='#') team        
+						li.header__right_item 
+							a(href='#') contact
+				.header__burger 
+					span 

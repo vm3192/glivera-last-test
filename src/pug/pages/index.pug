@@ -1,0 +1,33 @@
+extends ../layout/_layout
+
+block content_block
+	main.main
+		section.posts
+			h1.posts__title Recent posts
+			ul.posts__list 
+				each item in posts 
+					li.posts__list_item
+						+card(item)
+			button.posts__btn(type='button') older posts
+	aside.aside 
+		.aside__search
+			input(type="search" placeholder='Search blog')
+		.aside__row 
+			.aside__img 
+				img(src="images/icons/list_ico_1.svg" alt="icon")
+			h2.aside__title Announcements
+		ul.aside__list 
+			each announcement in announcements
+				li.aside__list_item= announcement
+		.aside__row 
+			.aside__img 
+				img(src="images/icons/list_ico_2.svg" alt="icon")
+			h2.aside__title Popular posts
+		ul.aside__list 
+			each popuparPost in popularPosts
+				li.aside__list_item= popuparPost
+		.aside__banner
+			img(src="images/widget_1.jpg" alt="img")
+		h2.aside__title.aside__title--mb Tag cloud
+		.aside__img 
+			img(src="images/widget_2.jpg" alt="img")

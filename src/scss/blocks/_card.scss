@@ -1,0 +1,57 @@
+.card {
+  display: flex;
+	padding: 0 0 3rem 0;
+	margin: 0 0 3rem 0;
+
+	border-bottom: 1px solid #EBECED;
+}
+
+.card__left {
+	margin: 0 4rem 0 0;
+}
+
+.card__image {
+	width: 28rem;
+	overflow: hidden;
+}
+
+.card__title {
+	margin: 0 0 2rem 0;
+	font-size: 2.4rem;
+	line-height: 3.4rem;
+	font-weight: 300;
+	color: #22252E;
+}
+
+.author_date {
+	margin: 0 0 1.2rem 0;
+}
+
+.author_date span {
+	margin: 0 0 0 0.6rem;
+	color: #889099;
+}
+
+.card__tags {
+	margin: 0 0 2rem 0;
+}
+
+.card__tags a {
+	margin: 0 0.6rem 0 0;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: #4CB649;
+	&:not(:last-child):after {
+		content: ',';
+	}
+}
+
+.card__bottom {
+	display: flex;
+	align-items: center;
+	color: #889099;
+}
+
+.card__commet_quantity {
+	margin: 0 0.6rem 0 0;
+}
