@@ -1,31 +1,38 @@
 //1
-@media (max-width: 1215px) {
-	.container {
+@media (max-width: $point_1) {
+	.section__in {
 		max-width: 960px;
 	}
 	.posts {
-		padding: 0 3rem 0 0;
+		padding-right: 3rem;
 	}
 	.aside {
-		padding: 0 0 0 3rem;
+		padding-left: 3rem;
 	}
 }
 //2
-@media (max-width: 991px) {
-	.container {
+@media (max-width: $point_2) {
+	.section__in {
 		max-width: 720px;
+
+		&.section__in--display_flex {
+			flex-direction: column;
+		}
+	}
+	.main {
+		margin-bottom: 3rem;
 	}
 	.posts {
 		padding: 0;
 		border-right: none;
 	}
 	.aside {
-		display: none;
+		padding: 0;
 	}
 }
 //3 
-@media (max-width: 768px) {
-	.container {
+@media (max-width: $point_4) {
+	.section__in {
 		max-width: 540px;
 	}
 	.card {
@@ -42,8 +49,8 @@
 	}
 }
 //4 
-@media (max-width: 576px) {
-	.container {
+@media (max-width: $point_6) {
+	.section__in {
 		max-width: 100%;
 		padding: 0 15px;
 	}

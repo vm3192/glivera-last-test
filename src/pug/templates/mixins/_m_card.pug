@@ -1,14 +1,18 @@
 mixin card(data)
 	.card
 		.card__left 
-			.card__image 
-				img(src=`images/${data.img}`, alt="img")
+			.card__image
+				+picture({
+					img: data.img
+				})
 		.card__right
 			h2.card__title= data.title 
-			p.author_date #{data.author} #[span #{data.date}]
+			p.card__info_row
+				span.card__author #{data.author} 
+				span.card__date #{data.date}
 			.card__tags 
 				each tag in data.tags 
-					a(href=tag.link)= tag.tag 
+					a(href="#")= tag 
 			.card__bottom 
 				.card__commet_quantity= data.quantity
-				img(src="images/icons/comment_ico.svg" alt="icon")
+				+icon('comment_ico')

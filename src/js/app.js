@@ -6,7 +6,7 @@ import pageWidgetInit from './dev_vendors/dev_widget';
 // ------------------- imports###
 
 // ------------------  import components
-import HeaderMenu from './components/burger';
+import menuOpen from './components/burger';
 // ------------------  import components###
 
 window.jQuery = $;

@@ -4,6 +4,7 @@ include ../templates/_project_vars
 include ../templates/_project_mixins
 
 block vars
+block project_vars
 doctype
 html(lang="en")
 	head
@@ -11,8 +12,7 @@ html(lang="en")
 	body(class= array.body_class)
 		+header
 		.wrapper(class= array.layout_mod)
-			.container
-				.base(class= array.layout_mod)
-						block content_block
+			.base(class= array.layout_mod)
+				block content_block
 		+footer
 		block local_popup

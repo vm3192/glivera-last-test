@@ -1,6 +1,5 @@
-block vars
+block project_vars
 	- 
-		array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'Index'}
 		links = [
 			{link: '#', name: 'bitcoin'},
 			{link: '#', name: 'bittorrent'},
@@ -10,44 +9,68 @@ block vars
 			{link: '#', name: 'programmong'},
 			{link: '#', name: 'security'},
 		]
-		
+
 		posts = [
-			{img: 'img1.jpg', 
-			title: 'The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises', 
-			author: 'Derek Zimmer',
-			date: ' |  JUL 25, 2018',
-			tags: [{link: '#', tag: 'Governments'}, {link: '#', tag: 'Networking'}, {link: '#', tag: 'Open Source'}, {link: '#', tag: 'Privacy'}, {link: '#', tag: 'Security'}, ], 
-			quantity: '0'},
-			{img: 'img2.jpg', 
-			title: 'How to get cheaper flights using a VPN', 
-			author: 'Jayson',
-			date: ' |  JUL 24, 2018',
-			tags: [{link: '#', tag: 'Guides'},], 
-			quantity: '0'},
-			{img: 'img3.jpg', 
-			title: 'Net Neutrality was repealed, but the fight is far from over', 
-			author: 'Chris Miller',
-			date: ' |  JUL 22, 2018',
-			tags: [{link: '#', tag: 'Governments'}, {link: '#', tag: 'Net Neutrality'}, {link: '#', tag: 'News'},], 
-			quantity: '0'},
-			{img: 'img1.jpg', 
-			title: 'The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises', 
-			author: 'Derek Zimmer',
-			date: ' |  JUL 25, 2018',
-			tags: [{link: '#', tag: 'Governments'}, {link: '#', tag: 'Networking'}, {link: '#', tag: 'Open Source'}, {link: '#', tag: 'Privacy'}, {link: '#', tag: 'Security'}, ], 
-			quantity: '0'},
-			{img: 'img2.jpg', 
-			title: 'How to get cheaper flights using a VPN', 
-			author: 'Jayson',
-			date: ' |  JUL 24, 2018',
-			tags: [{link: '#', tag: 'Guides'},], 
-			quantity: '0'},
-			{img: 'img3.jpg', 
-			title: 'Net Neutrality was repealed, but the fight is far from over', 
-			author: 'Chris Miller',
-			date: ' |  JUL 22, 2018',
-			tags: [{link: '#', tag: 'Governments'}, {link: '#', tag: 'Net Neutrality'}, {link: '#', tag: 'News'},], 
-			quantity: '0'},
+			{
+				img: 'img1', 
+				title: 'The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises', 
+				author: 'Derek Zimmer',
+				date: 'JUL 25, 2018',
+				tags: [
+					'Governments', 'Networking', 'Open Source', 'Privacy', 'Security',
+					], 
+				quantity: '0'
+			},
+			{
+				img: 'img2', 
+				title: 'How to get cheaper flights using a VPN', 
+				author: 'Jayson',
+				date: 'JUL 24, 2018',
+				tags: [
+					'Guides',
+					], 
+				quantity: '0'
+			},
+			{
+				img: 'img3', 
+				title: 'Net Neutrality was repealed, but the fight is far from over', 
+				author: 'Chris Miller',
+				date: 'JUL 22, 2018',
+				tags: [
+					'Governments', 'Net Neutrality', 'News',
+					], 
+				quantity: '0'
+			},
+			{
+				img: 'img1', 
+				title: 'The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises', 
+				author: 'Derek Zimmer',
+				date: 'JUL 25, 2018',
+				tags: [
+					'Governments', 'Networking', 'Open Source', 'Privacy', 'Security',
+					], 
+				quantity: '0'
+			},
+			{
+				img: 'img2', 
+				title: 'How to get cheaper flights using a VPN', 
+				author: 'Jayson',
+				date: 'JUL 24, 2018',
+				tags: [
+					'Guides',
+					], 
+				quantity: '0'
+			},
+			{
+				img: 'img3', 
+				title: 'Net Neutrality was repealed, but the fight is far from over', 
+				author: 'Chris Miller',
+				date: 'JUL 22, 2018',
+				tags: [
+					'Governments', 'Net Neutrality', 'News',
+					], 
+				quantity: '0'
+			},
 		]
 
 		announcements = [

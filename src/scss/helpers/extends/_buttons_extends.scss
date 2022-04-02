@@ -28,6 +28,16 @@
 	}
 
 }
+%green_btn_1 {
+	color: #4cb649;
+	background: transparent;
+	transition: all .3s ease;
+
+	&:hover {
+		color: $white;
+		background: #4cb649;
+	}
+}
 
 //size extends
 %btn_size_1 {
@@ -38,4 +48,11 @@
 	font-size: 1.6rem;
 
 	border-radius: $gl_radius;
+}
+%green_btn_size_1 {
+  min-width: 26rem;
+  min-height: 4rem;
+
+  border: 1px solid #4cb649;
+  border-radius: 3rem;
 }

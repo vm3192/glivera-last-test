@@ -9,3 +9,4 @@ function requireAll(r) {
 }
 
 requireAll(require.context('./images/icons/sprite_icons/', true, /\.svg$/));
+

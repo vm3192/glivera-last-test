@@ -1,9 +1,5 @@
 .card {
   display: flex;
-	padding: 0 0 3rem 0;
-	margin: 0 0 3rem 0;
-
-	border-bottom: 1px solid #EBECED;
 }
 
 .card__left {
@@ -11,33 +7,56 @@
 }
 
 .card__image {
+	position: relative;
+
+	padding-top: 64%;
+
 	width: 28rem;
 	overflow: hidden;
+
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		width: 100%;
+
+		object-fit: cover;
+	}
 }
 
 .card__title {
-	margin: 0 0 2rem 0;
+	margin-bottom: 2rem;
 	font-size: 2.4rem;
 	line-height: 3.4rem;
 	font-weight: 300;
 	color: #22252E;
 }
 
-.author_date {
-	margin: 0 0 1.2rem 0;
+.card__info_row {
+	margin-bottom: 1.2rem;
 }
 
-.author_date span {
-	margin: 0 0 0 0.6rem;
+.card__date {
+	position: relative;
+
+	padding-left: 1rem;
 	color: #889099;
+
+	&:before {
+		content: '|';
+
+		position: absolute;
+		left: .4rem;
+	}
 }
 
 .card__tags {
-	margin: 0 0 2rem 0;
+	margin-bottom: 2rem;
 }
 
 .card__tags a {
-	margin: 0 0.6rem 0 0;
+	margin-right: .6rem;
 	font-size: 1.2rem;
 	text-transform: uppercase;
 	color: #4CB649;
@@ -53,5 +72,10 @@
 }
 
 .card__commet_quantity {
-	margin: 0 0.6rem 0 0;
+	margin-right: .6rem;
+}
+
+.icon_comment_ico {
+	width: 1.2rem;
+	height: 1.2rem;
 }

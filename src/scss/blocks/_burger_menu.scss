@@ -1,4 +1,4 @@
-@media (max-width: 1215px) {
+@media (max-width: $point_1) {
 	body.lock {
 		overflow: hidden;
 	}
@@ -89,12 +89,10 @@
 
 		text-align: center;
 	}
-	.header__left_item {
-		padding: 0;
+	.header__left_item:not(:last-child) {
 		margin: 0 0 2rem 0;
 	}
-	.header__right_item {
-		padding: 0;
-		margin: 0 0 2rem 0;
+	.header__right_item:not(:first-child) {
+		margin: 2rem 0 0 0;
 	}
 }

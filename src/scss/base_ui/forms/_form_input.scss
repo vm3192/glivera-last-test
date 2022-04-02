@@ -5,3 +5,25 @@
 .form_input__element {
 	@extend %form_el_default;
 }
+
+.aside__search input {
+  width: 100%;
+  padding: 0 6rem;
+  height: 6rem;
+
+  font-size: 1.8rem;
+
+  border: 1px solid #d7d8d9;
+  border-radius: .4rem;
+
+  &::placeholder {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #22252e;
+  }
+
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-decoration {
+    appearance: none;
+  }
+}

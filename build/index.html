@@ -30,7 +30,7 @@
   <link href="css/app.css" rel="stylesheet"></head>
   <body>
     <header class="header"> 
-      <div class="container">
+      <div class="section__in">
         <nav class="header__nav">
           <div class="header__menu">
             <ul class="header__left_list">
@@ -49,148 +49,221 @@
               <li class="header__right_item"> <a href="#">contact</a></li>
             </ul>
           </div>
-          <div class="header__burger"> <span> </span></div>
+          <div class="menu_trigger menuTrigger"><span class="menu_trigger_decor"></span></div>
         </nav>
       </div>
     </header>
     <div class="wrapper">
-      <div class="container">
-        <div class="base">
-          <main class="main">
-            <section class="posts">
-              <h1 class="posts__title">Recent posts</h1>
-              <ul class="posts__list"> 
-                <li class="posts__list_item">
-                  <div class="card">
-                    <div class="card__left"> 
-                      <div class="card__image"> <img src="images/img1.jpg" alt="img"></div>
-                    </div>
-                    <div class="card__right">
-                      <h2 class="card__title">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</h2>
-                      <p class="author_date">Derek Zimmer <span> |  JUL 25, 2018</span></p>
-                      <div class="card__tags"> <a href="#">Governments</a><a href="#">Networking</a><a href="#">Open Source</a><a href="#">Privacy</a><a href="#">Security</a>
+      <div class="base">
+        <section class="section"> 
+          <div class="section__in section__in--display_flex">
+            <main class="main">
+              <section class="posts">
+                <h1 class="posts__title">Recent posts</h1>
+                <ul class="posts__list"> 
+                  <li class="posts__list_item">
+                    <div class="card">
+                      <div class="card__left"> 
+                        <div class="card__image">
+                          <picture>
+                            <source srcset="images/img1.jpg.webp" type="image/webp">
+                            <source srcset="images/img1.jpg" type="image/jpg"><img class="cover_img" src="images/img1.jpg" alt="">
+                          </picture>
+                        </div>
                       </div>
-                      <div class="card__bottom"> 
-                        <div class="card__commet_quantity">0</div><img src="images/icons/comment_ico.svg" alt="icon">
+                      <div class="card__right">
+                        <h2 class="card__title">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</h2>
+                        <p class="card__info_row"><span class="card__author">Derek Zimmer </span><span class="card__date">JUL 25, 2018</span></p>
+                        <div class="card__tags"> <a href="#">Governments</a><a href="#">Networking</a><a href="#">Open Source</a><a href="#">Privacy</a><a href="#">Security</a>
+                        </div>
+                        <div class="card__bottom"> 
+                          <div class="card__commet_quantity">0</div>
+                          <svg class="icon icon_comment_ico ">
+                            <use xlink:href="images/sprite/sprite.svg#comment_ico"></use>
+                          </svg>
+                        </div>
                       </div>
                     </div>
+                  </li>
+                  <li class="posts__list_item">
+                    <div class="card">
+                      <div class="card__left"> 
+                        <div class="card__image">
+                          <picture>
+                            <source srcset="images/img2.jpg.webp" type="image/webp">
+                            <source srcset="images/img2.jpg" type="image/jpg"><img class="cover_img" src="images/img2.jpg" alt="">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="card__right">
+                        <h2 class="card__title">How to get cheaper flights using a VPN</h2>
+                        <p class="card__info_row"><span class="card__author">Jayson </span><span class="card__date">JUL 24, 2018</span></p>
+                        <div class="card__tags"> <a href="#">Guides</a>
+                        </div>
+                        <div class="card__bottom"> 
+                          <div class="card__commet_quantity">0</div>
+                          <svg class="icon icon_comment_ico ">
+                            <use xlink:href="images/sprite/sprite.svg#comment_ico"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="posts__list_item">
+                    <div class="card">
+                      <div class="card__left"> 
+                        <div class="card__image">
+                          <picture>
+                            <source srcset="images/img3.jpg.webp" type="image/webp">
+                            <source srcset="images/img3.jpg" type="image/jpg"><img class="cover_img" src="images/img3.jpg" alt="">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="card__right">
+                        <h2 class="card__title">Net Neutrality was repealed, but the fight is far from over</h2>
+                        <p class="card__info_row"><span class="card__author">Chris Miller </span><span class="card__date">JUL 22, 2018</span></p>
+                        <div class="card__tags"> <a href="#">Governments</a><a href="#">Net Neutrality</a><a href="#">News</a>
+                        </div>
+                        <div class="card__bottom"> 
+                          <div class="card__commet_quantity">0</div>
+                          <svg class="icon icon_comment_ico ">
+                            <use xlink:href="images/sprite/sprite.svg#comment_ico"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="posts__list_item">
+                    <div class="card">
+                      <div class="card__left"> 
+                        <div class="card__image">
+                          <picture>
+                            <source srcset="images/img1.jpg.webp" type="image/webp">
+                            <source srcset="images/img1.jpg" type="image/jpg"><img class="cover_img" src="images/img1.jpg" alt="">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="card__right">
+                        <h2 class="card__title">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</h2>
+                        <p class="card__info_row"><span class="card__author">Derek Zimmer </span><span class="card__date">JUL 25, 2018</span></p>
+                        <div class="card__tags"> <a href="#">Governments</a><a href="#">Networking</a><a href="#">Open Source</a><a href="#">Privacy</a><a href="#">Security</a>
+                        </div>
+                        <div class="card__bottom"> 
+                          <div class="card__commet_quantity">0</div>
+                          <svg class="icon icon_comment_ico ">
+                            <use xlink:href="images/sprite/sprite.svg#comment_ico"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="posts__list_item">
+                    <div class="card">
+                      <div class="card__left"> 
+                        <div class="card__image">
+                          <picture>
+                            <source srcset="images/img2.jpg.webp" type="image/webp">
+                            <source srcset="images/img2.jpg" type="image/jpg"><img class="cover_img" src="images/img2.jpg" alt="">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="card__right">
+                        <h2 class="card__title">How to get cheaper flights using a VPN</h2>
+                        <p class="card__info_row"><span class="card__author">Jayson </span><span class="card__date">JUL 24, 2018</span></p>
+                        <div class="card__tags"> <a href="#">Guides</a>
+                        </div>
+                        <div class="card__bottom"> 
+                          <div class="card__commet_quantity">0</div>
+                          <svg class="icon icon_comment_ico ">
+                            <use xlink:href="images/sprite/sprite.svg#comment_ico"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="posts__list_item">
+                    <div class="card">
+                      <div class="card__left"> 
+                        <div class="card__image">
+                          <picture>
+                            <source srcset="images/img3.jpg.webp" type="image/webp">
+                            <source srcset="images/img3.jpg" type="image/jpg"><img class="cover_img" src="images/img3.jpg" alt="">
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="card__right">
+                        <h2 class="card__title">Net Neutrality was repealed, but the fight is far from over</h2>
+                        <p class="card__info_row"><span class="card__author">Chris Miller </span><span class="card__date">JUL 22, 2018</span></p>
+                        <div class="card__tags"> <a href="#">Governments</a><a href="#">Net Neutrality</a><a href="#">News</a>
+                        </div>
+                        <div class="card__bottom"> 
+                          <div class="card__commet_quantity">0</div>
+                          <svg class="icon icon_comment_ico ">
+                            <use xlink:href="images/sprite/sprite.svg#comment_ico"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <button class="posts__btn" type="button">older posts</button>
+              </section>
+            </main>
+            <aside class="aside"> 
+              <div class="aside__search">
+                <button class="aside__btn" type="submit">
+                  <svg class="icon icon_search_ico ">
+                    <use xlink:href="images/sprite/sprite.svg#search_ico"></use>
+                  </svg>
+                </button>
+                <div class="form_input">
+                  <div class="form_input__field">
+                    <input class="form_input__element" type="search" placeholder="Search blog" value="">
                   </div>
-                </li>
-                <li class="posts__list_item">
-                  <div class="card">
-                    <div class="card__left"> 
-                      <div class="card__image"> <img src="images/img2.jpg" alt="img"></div>
-                    </div>
-                    <div class="card__right">
-                      <h2 class="card__title">How to get cheaper flights using a VPN</h2>
-                      <p class="author_date">Jayson <span> |  JUL 24, 2018</span></p>
-                      <div class="card__tags"> <a href="#">Guides</a>
-                      </div>
-                      <div class="card__bottom"> 
-                        <div class="card__commet_quantity">0</div><img src="images/icons/comment_ico.svg" alt="icon">
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="aside__widget">
+                <div class="aside__row"> 
+                  <div class="aside__img"> 
+                    <svg class="icon icon_list_ico_1 ">
+                      <use xlink:href="images/sprite/sprite.svg#list_ico_1"></use>
+                    </svg>
                   </div>
-                </li>
-                <li class="posts__list_item">
-                  <div class="card">
-                    <div class="card__left"> 
-                      <div class="card__image"> <img src="images/img3.jpg" alt="img"></div>
-                    </div>
-                    <div class="card__right">
-                      <h2 class="card__title">Net Neutrality was repealed, but the fight is far from over</h2>
-                      <p class="author_date">Chris Miller <span> |  JUL 22, 2018</span></p>
-                      <div class="card__tags"> <a href="#">Governments</a><a href="#">Net Neutrality</a><a href="#">News</a>
-                      </div>
-                      <div class="card__bottom"> 
-                        <div class="card__commet_quantity">0</div><img src="images/icons/comment_ico.svg" alt="icon">
-                      </div>
-                    </div>
+                  <h2 class="aside__title">Announcements</h2>
+                </div>
+                <ul class="aside__list"> 
+                  <li class="aside__list_item">Upcoming Changes (Live Chat, Less Censorship, More Access)</li>
+                  <li class="aside__list_item">New Servers (US Washington DC)</li>
+                  <li class="aside__list_item">New Servers (US Denver)</li>
+                  <li class="aside__list_item">Open Source: Releasing the PIA iOS Client</li>
+                  <li class="aside__list_item">Opera Extension is now available</li>
+                </ul>
+              </div>
+              <div class="aside__widget">
+                <div class="aside__row"> 
+                  <div class="aside__img"> 
+                    <svg class="icon icon_list_ico_2 ">
+                      <use xlink:href="images/sprite/sprite.svg#list_ico_2"></use>
+                    </svg>
                   </div>
-                </li>
-                <li class="posts__list_item">
-                  <div class="card">
-                    <div class="card__left"> 
-                      <div class="card__image"> <img src="images/img1.jpg" alt="img"></div>
-                    </div>
-                    <div class="card__right">
-                      <h2 class="card__title">The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises</h2>
-                      <p class="author_date">Derek Zimmer <span> |  JUL 25, 2018</span></p>
-                      <div class="card__tags"> <a href="#">Governments</a><a href="#">Networking</a><a href="#">Open Source</a><a href="#">Privacy</a><a href="#">Security</a>
-                      </div>
-                      <div class="card__bottom"> 
-                        <div class="card__commet_quantity">0</div><img src="images/icons/comment_ico.svg" alt="icon">
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="posts__list_item">
-                  <div class="card">
-                    <div class="card__left"> 
-                      <div class="card__image"> <img src="images/img2.jpg" alt="img"></div>
-                    </div>
-                    <div class="card__right">
-                      <h2 class="card__title">How to get cheaper flights using a VPN</h2>
-                      <p class="author_date">Jayson <span> |  JUL 24, 2018</span></p>
-                      <div class="card__tags"> <a href="#">Guides</a>
-                      </div>
-                      <div class="card__bottom"> 
-                        <div class="card__commet_quantity">0</div><img src="images/icons/comment_ico.svg" alt="icon">
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="posts__list_item">
-                  <div class="card">
-                    <div class="card__left"> 
-                      <div class="card__image"> <img src="images/img3.jpg" alt="img"></div>
-                    </div>
-                    <div class="card__right">
-                      <h2 class="card__title">Net Neutrality was repealed, but the fight is far from over</h2>
-                      <p class="author_date">Chris Miller <span> |  JUL 22, 2018</span></p>
-                      <div class="card__tags"> <a href="#">Governments</a><a href="#">Net Neutrality</a><a href="#">News</a>
-                      </div>
-                      <div class="card__bottom"> 
-                        <div class="card__commet_quantity">0</div><img src="images/icons/comment_ico.svg" alt="icon">
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <button class="posts__btn" type="button">older posts</button>
-            </section>
-          </main>
-          <aside class="aside"> 
-            <div class="aside__search">
-              <input type="search" placeholder="Search blog">
-            </div>
-            <div class="aside__row"> 
-              <div class="aside__img"> <img src="images/icons/list_ico_1.svg" alt="icon"></div>
-              <h2 class="aside__title">Announcements</h2>
-            </div>
-            <ul class="aside__list"> 
-              <li class="aside__list_item">Upcoming Changes (Live Chat, Less Censorship, More Access)</li>
-              <li class="aside__list_item">New Servers (US Washington DC)</li>
-              <li class="aside__list_item">New Servers (US Denver)</li>
-              <li class="aside__list_item">Open Source: Releasing the PIA iOS Client</li>
-              <li class="aside__list_item">Opera Extension is now available</li>
-            </ul>
-            <div class="aside__row"> 
-              <div class="aside__img"> <img src="images/icons/list_ico_2.svg" alt="icon"></div>
-              <h2 class="aside__title">Popular posts</h2>
-            </div>
-            <ul class="aside__list"> 
-              <li class="aside__list_item">The Gift of Privacy</li>
-              <li class="aside__list_item">UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture</li>
-              <li class="aside__list_item">About the PIA Client Security and VPN Security in General</li>
-              <li class="aside__list_item">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</li>
-              <li class="aside__list_item">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t Fall For That Lie</li>
-            </ul>
-            <div class="aside__banner"><img src="images/widget_1.jpg" alt="img"></div>
-            <h2 class="aside__title aside__title--mb">Tag cloud</h2>
-            <div class="aside__img"> <img src="images/widget_2.jpg" alt="img"></div>
-          </aside>
-        </div>
+                  <h2 class="aside__title">Popular posts</h2>
+                </div>
+                <ul class="aside__list"> 
+                  <li class="aside__list_item">The Gift of Privacy</li>
+                  <li class="aside__list_item">UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture</li>
+                  <li class="aside__list_item">About the PIA Client Security and VPN Security in General</li>
+                  <li class="aside__list_item">A Private Net Is Just As Fundamental A Right As Freedom Of Speech</li>
+                  <li class="aside__list_item">Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t Fall For That Lie</li>
+                </ul>
+              </div>
+              <div class="aside__banner"><img src="images/widget_1.jpg" alt="img"></div>
+              <div class="aside__widget aside__widget--no_border">
+                <h2 class="aside__title aside__title--margin_bottom">Tag cloud</h2>
+                <div class="aside__tag_img"> <img src="images/widget_2.jpg" alt="img"></div>
+              </div>
+            </aside>
+          </div>
+        </section>
       </div>
     </div>
     <footer class="footer"></footer>
