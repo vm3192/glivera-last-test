@@ -89,6 +89,9 @@
 
 		text-align: center;
 	}
+	.header__left_item {
+		padding: 0;
+	}
 	.header__left_item:not(:last-child) {
 		margin: 0 0 2rem 0;
 	}
