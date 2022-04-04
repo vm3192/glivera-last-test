@@ -77,25 +77,25 @@
 		flex-direction: column;
 		justify-content: start;
 	}
-	.header__left_list {
+	.header__tags_list {
 		flex-direction: column;
 		margin: 0 0 4rem 0;
 
 		text-align: center;
 	}
-	.header__right_list {
+	.header__contacts_list {
 		flex-direction: column;
 		margin: 0;
 
 		text-align: center;
 	}
-	.header__left_item {
+	.header__tags_item {
 		padding: 0;
 	}
-	.header__left_item:not(:last-child) {
+	.header__tags_item:not(:last-child) {
 		margin: 0 0 2rem 0;
 	}
-	.header__right_item:not(:first-child) {
+	.header__contacts_item:not(:first-child) {
 		margin: 2rem 0 0 0;
 	}
 }

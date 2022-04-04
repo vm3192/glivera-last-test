@@ -3,15 +3,15 @@ mixin header
 		.section__in
 			nav.header__nav
 				.header__menu
-					ul.header__left_list
-						li.header__left_item TAGS: 
+					ul.header__tags_list
+						li.header__tags_item TAGS: 
 							each value in links
-								li.header__left_item 
+								li.header__tags_item 
 									a(href=value.link)= value.name
-					ul.header__right_list
-						li.header__right_item 
+					ul.header__contacts_list
+						li.header__contacts_item 
 							a(href='#') team        
-						li.header__right_item 
+						li.header__contacts_item 
 							a(href='#') contact
 				.menu_trigger.menuTrigger
 					span.menu_trigger_decor

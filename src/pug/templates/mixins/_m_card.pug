@@ -1,11 +1,11 @@
 mixin card(data)
 	.card
-		.card__left 
+		.card__photo 
 			.card__image
 				+picture({
 					img: data.img
 				})
-		.card__right
+		.card__info
 			h2.card__title= data.title 
 			p.card__info_row
 				span.card__author #{data.author} 
