@@ -1,15 +1,17 @@
 let menuTrigger;
-let body = document.querySelector('.header__menu');
+let headerMenu = document.querySelector('.header__menu');
+let body = document.querySelector('body');
 
 menuTrigger = document.querySelector('.menuTrigger');
 
 menuTrigger.addEventListener('click', () => {
-  console.log('hello');
-  if (body.classList.contains('active')) {
-    body.classList.remove('active');
+  if (headerMenu.classList.contains('active')) {
+    headerMenu.classList.remove('active');
     menuTrigger.classList.remove('active_mod');
+		body.style.overflowY = 'auto';
   } else {
-    body.classList.add('active');
+    headerMenu.classList.add('active');
     menuTrigger.classList.add('active_mod');
+		body.style.overflowY = 'hidden';
   }
 });

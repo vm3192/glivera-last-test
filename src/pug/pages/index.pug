@@ -4,7 +4,7 @@ block vars
 	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'Index'}
 block content_block
 	section.section 
-		.section__in.section__in--display_flex
+		.section_in.section_in--display_flex
 			main.main
 				section.posts
 					h1.posts__title Recent posts
@@ -34,7 +34,6 @@ block content_block
 				.aside__widget
 					.aside__row 
 						.aside__img 
-							//- img(src="images/icons/list_ico_2.svg" alt="icon")
 							+icon('list_ico_2')
 						h2.aside__title Popular posts
 					ul.aside__list 
@@ -45,4 +44,7 @@ block content_block
 				.aside__widget.aside__widget--no_border
 					h2.aside__title.aside__title--margin_bottom Tag cloud
 					.aside__tag_img 
-						img(src="images/widget_2.jpg" alt="img")
+						ul.aside__tags_list 
+							each tag in tagLinks 
+								li(class=`aside__tags_list_item aside__tags_list_item--font_${tag.class}`)
+									a(href="#")= tag.title

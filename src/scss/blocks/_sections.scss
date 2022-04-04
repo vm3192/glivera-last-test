@@ -22,7 +22,12 @@
 }
 
 .section_in {
+	padding: 0 1.6rem;
 	max-width: $page_width;
 	width: 100%;
 	margin: 0 auto;
+
+	&.section_in--display_flex {
+    display: flex;
+  }
 }

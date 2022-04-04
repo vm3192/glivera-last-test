@@ -1,21 +1,69 @@
 //1
 @media (max-width: $point_1) {
-	.section__in {
-		max-width: 960px;
-	}
 	.posts {
 		padding-right: 3rem;
 	}
 	.aside {
 		padding-left: 3rem;
 	}
+
+	.header__menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		padding: 90px 0 0 0;
+
+		font-size: 2.4rem;
+
+		overflow: auto;
+		background-color: #fff;
+
+		transition: all 0.3s ease 0s;
+	}
+	.header__menu.active {
+		top: 0;
+	}
+	.header__list {
+		display: block;
+	}
+	.header__link {
+		margin: 0 0 20px 0;
+	}
+
+	.header__menu {
+		flex-direction: column;
+		justify-content: start;
+	}
+	.header__tags_list {
+		flex-direction: column;
+		margin: 0 0 4rem 0;
+
+		text-align: center;
+	}
+	.header__contacts_list {
+		flex-direction: column;
+		margin: 0;
+
+		text-align: center;
+	}
+	.header__tags_item {
+		padding: 0;
+	}
+	.header__tags_item:not(:last-child) {
+		margin: 0 0 2rem 0;
+	}
+	.header__contacts_item:not(:first-child) {
+		margin: 2rem 0 0 0;
+	}
 }
 //2
 @media (max-width: $point_2) {
-	.section__in {
-		max-width: 720px;
+	.section_in {
 
-		&.section__in--display_flex {
+		&.section_in--display_flex {
 			flex-direction: column;
 		}
 	}
@@ -32,9 +80,6 @@
 }
 //3 
 @media (max-width: $point_4) {
-	.section__in {
-		max-width: 540px;
-	}
 	.card {
 		flex-direction: column;
 	}
@@ -50,10 +95,6 @@
 }
 //4 
 @media (max-width: $point_6) {
-	.section__in {
-		max-width: 100%;
-		padding: 0 15px;
-	}
 	.card__photo {
 		margin: 0 0 2rem 0;
 	}
